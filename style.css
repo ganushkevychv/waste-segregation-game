@@ -1,0 +1,163 @@
+.container-can,
+.container-trash {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.pCan,
+.eCan,
+.gCan,
+.prCan,
+.mCan,
+.oCan {
+  background-size: 100px 120px;
+  width: 100px;
+  height: 120px;
+}
+.ew,
+.ew1,
+.ew2,
+.ew3,
+.glass,
+.glass1,
+.glass2,
+.glass3,
+.metal,
+.metal1,
+.metal2,
+.metal3,
+.organic,
+.organic1,
+.organic2,
+.organic3,
+.organic4,
+.organic5,
+.organic6,
+.organic7,
+.paper,
+.paper1,
+.paper2,
+.paper3,
+.paper4,
+.plastic,
+.plastic1,
+.plastic2,
+.plastic3,
+.plastic4,
+.plastic5 {
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.ew {
+  background-image: url(../img/ew.png);
+}
+.ew1 {
+  background-image: url(../img/ew1.png);
+}
+.ew2 {
+  background-image: url(../img/ew2.png);
+}
+.ew3 {
+  background-image: url(../img/ew3.png);
+}
+.glass {
+  background-image: url(../img/glass.png);
+}
+.glass1 {
+  background-image: url(../img/glass1.png);
+}
+.glass2 {
+  background-image: url(../img/glass2.png);
+}
+.glass3 {
+  background-image: url(../img/glass3.png);
+}
+.metal {
+  background-image: url(../img/metal.png);
+}
+.metal1 {
+  background-image: url(../img/metal1.png);
+}
+.metal2 {
+  background-image: url(../img/metal2.png);
+}
+.metal3 {
+  background-image: url(../img/metal3.png);
+}
+.organic {
+  background-image: url(../img/organic.png);
+}
+.organic1 {
+  background-image: url(../img/organic1.png);
+}
+.organic2 {
+  background-image: url(../img/organic2.png);
+}
+.organic3 {
+  background-image: url(../img/organic3.png);
+}
+.organic4 {
+  background-image: url(../img/organic4.png);
+}
+.organic5 {
+  background-image: url(../img/organic5.png);
+}
+.organic6 {
+  background-image: url(../img/organic6.png);
+}
+.organic7 {
+  background-image: url(../img/organic7.png);
+}
+.paper {
+  background-image: url(../img/paper.png);
+}
+.paper1 {
+  background-image: url(../img/paper1.png);
+}
+.paper2 {
+  background-image: url(../img/paper2.png);
+}
+.paper3 {
+  background-image: url(../img/paper3.png);
+}
+.paper4 {
+  background-image: url(../img/paper4.png);
+}
+.plastic {
+  background-image: url(../img/plastic.png);
+}
+.plastic1 {
+  background-image: url(../img/plastic1.png);
+}
+.plastic2 {
+  background-image: url(../img/plastic2.png);
+}
+.plastic3 {
+  background-image: url(../img/plastic3.png);
+}
+.plastic4 {
+  background-image: url(../img/plastic4.png);
+}
+.plastic5 {
+  background-image: url(../img/plastic5.png);
+}
+.pCan {
+  background-image: url(../img/pCan.png);
+}
+.eCan {
+  background-image: url(../img/eCan.png);
+}
+.gCan {
+  background-image: url(../img/gCan.png);
+}
+.prCan {
+  background-image: url(../img/prCan.png);
+}
+.mCan {
+  background-image: url(../img/mCan.png);
+}
+.oCan {
+  background-image: url(../img/oCan.png);
+}
