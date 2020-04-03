@@ -24,6 +24,7 @@ body{
 .prCan,
 .mCan,
 .oCan {
+  box-shadow: red;
   background-size: 100px 120px;
   width: 100px;
   height: 120px;

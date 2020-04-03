@@ -1,53 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
     <title>Segregacja śmieci</title>
-</head>
-<body>
-    <div class="container-trash">
-        <div class="plastic" id="plastic"></div>
-        <div class="plastic1"></div>
-        <div class="plastic2"></div>
-        <div class="plastic3"></div>
-        <div class="plastic4"></div>
-        <div class="plastic5"></div>
-        <div class="paper"></div>
-        <div class="paper1"></div>
-        <div class="paper2"></div>
-        <div class="paper3"></div>
-        <div class="paper4"></div>
-        <div class="organic"></div>
-        <div class="organic1"></div>
-        <div class="organic2"></div>
-        <div class="organic3"></div>
-        <div class="organic4"></div>
-        <div class="organic5"></div>
-        <div class="organic6"></div>
-        <div class="organic7"></div>
-        <div class="metal"></div>
-        <div class="metal1"></div>
-        <div class="metal2"></div>
-        <div class="metal3"></div>
-        <div class="glass"></div>
-        <div class="glass1"></div>
-        <div class="glass2"></div>
-        <div class="glass3"></div>
-        <div class="ew"></div>
-        <div class="ew1"></div>
-        <div class="ew2"></div>
-        <div class="ew3"></div>
+  </head>
+  <body>
+    <div class="container-trash" id="trash">
+      <div
+        class="plastic"
+        id="plastic"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="plastic1"
+        id="plastic1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="plastic2"
+        id="plastic2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="plastic3"
+        id="plastic3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="plastic4"
+        id="plastic4"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="plastic5"
+        id="plastic5"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="paper"
+        id="paper"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="paper1"
+        id="paper1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="paper2"
+        id="paper2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="paper3"
+        id="paper3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="paper4"
+        id="paper4"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic"
+        id="organic"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic1"
+        id="organic1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic2"
+        id="organic2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic3"
+        id="organic3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic4"
+        id="organic4"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic5"
+        id="organic5"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic6"
+        id="organic6"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="organic7"
+        id="organic7"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="metal"
+        id="metal"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="metal1"
+        id="metal1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="metal2"
+        id="metal2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="metal3"
+        id="metal3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="glass"
+        id="glass"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="glass1"
+        id="glass1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="glass2"
+        id="glass2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="glass3"
+        id="glass3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div class="ew" id="ew" draggable="true" ondragstart="drag(event)"></div>
+      <div
+        class="ew1"
+        id="ew1"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="ew2"
+        id="ew2"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
+      <div
+        class="ew3"
+        id="ew3"
+        draggable="true"
+        ondragstart="drag(event)"
+      ></div>
     </div>
     <div class="container-can">
-    <div class="pCan"></div>
-    <div class="prCan"></div>
-    <div class="oCan"></div>
-    <div class="mCan"></div>
-    <div class="gCan"></div>
-    <div class="eCan"></div>
+      <div
+        class="pCan"
+        id="pCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        class="prCan"
+        id="prCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        class="oCan"
+        id="oCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        class="mCan"
+        id="mCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        class="gCan"
+        id="gCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      <div
+        class="eCan"
+        id="eCan"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
     </div>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
