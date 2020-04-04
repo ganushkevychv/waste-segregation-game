@@ -93,15 +93,16 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault();
-    let data = ev.dataTransfer.getData("text");
-    let allWaste = document.getElementById(data);
-    let pCan = document.getElementById("pCan");
-    let waste = allWaste.getAttribute("type")
 
-    ev.target.appendChild(allWaste);
+    // The can where the waste is dropped
+    let can = ev.target;
+    // the waste that is dragged
+    let waste = document.getElementById(ev.dataTransfer.getData("text"));
+
+    can.appendChild(waste);
     
-    if (overlap(waste, pCan) && waste.type == pCan.type) {
-        allWaste.style.display = 'none';
+    if (overlap(waste, can) && waste.getAttribute('type') === can.getAttribute('type')) {
+        waste.style.display = 'none';
     }
 }
 
