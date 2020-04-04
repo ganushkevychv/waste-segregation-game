@@ -50,7 +50,7 @@ match = () => {
     }
 }
 match()
-*/
+
 function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -63,7 +63,7 @@ function drag(ev) {
     let data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
   }
-  overlap = () => {
+
 
   let plastic = document.getElementById("plastic").getBoundingClientRect();
   let plastic1 = document.getElementById("plastic1").getBoundingClientRect();
@@ -74,5 +74,43 @@ function drag(ev) {
   let pCan = document.getElementById("pCan").getBoundingClientRect();
  if (plastic.right < pCan.left || plastic.left > pCan.right || plastic.bottom < pCan.top || plastic.top > pCan.bottom ){
     plastic.style.display = "none";
- }
+ }*/
+ function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    let data = ev.dataTransfer.getData("text");
+    let allWaste = document.getElementById(data);
+    let pCan = document.getElementById("pCan");
+    let waste = allWaste.getAttribute("type")
+
+    ev.target.appendChild(allWaste);
+    
+    if (overlap(waste, pCan) && waste.type == pCan.type) {
+        allWaste.style.display = 'none';
+    }
+}
+
+function overlap(el, el2) {
+    const rect1 = el.getBoundingClientRect();
+    const rect2 = el2.getBoundingClientRect();
+    
+    return !(rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom)
 }
