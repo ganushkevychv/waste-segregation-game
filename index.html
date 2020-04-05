@@ -7,14 +7,16 @@
     <title>Segregacja śmieci</title>
   </head>
   <body>
-    <div class="container-trash" id="trash">
+      <div class="container">
+    <div class="container-trash">
       <div
         class="plastic"
         id="plastic"
         type="plastic"
         draggable="true"
         ondragstart="drag(event)"
-      ></div>
+      >
+    </div>
       <div
         class="plastic1"
         id="plastic1"
@@ -197,7 +199,12 @@
         draggable="true"
         ondragstart="drag(event)"
       ></div>
-      <div class="ew" id="ew" draggable="true" ondragstart="drag(event)"></div>
+      <div 
+      class="ew" 
+      id="ew" 
+      draggable="true" 
+      ondragstart="drag(event)" 
+      type="ew"></div>
       <div
         class="ew1"
         id="ew1"
@@ -220,6 +227,7 @@
         ondragstart="drag(event)"
       ></div>
     </div>
+
     <div class="container-can">
       <div
         class="pCan"
@@ -264,6 +272,8 @@
         ondragover="allowDrop(event)"
       ></div>
     </div>
+</div>
+</div>
     <script src="/script.js"></script>
   </body>
 </html>
